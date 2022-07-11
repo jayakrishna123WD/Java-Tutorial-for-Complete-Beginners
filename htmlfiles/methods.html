@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Methods</h3>
+            <div class="tab">
+                <a href="../htmlfiles/access_modifiers.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/enums.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Functions ante meku telusu DRY(Do Not Repeat Yourself) ni follow avvadaniki use chestam <br>
+                &#9749; aythe Procedural programming lo functions ni direct ga call chestam avi provide chesina data paina operation ni perform chestundi kadha <br>
+                &#9749; but, Java total object oriented language antha classes kabatti manam object create chesi taruvata use cheskovacchu <br>
+                &#9749; Methods lo total 4 ways lo use cheskovacchu <br>
+                <p class="ten">&#11088; No return type  No parameters <br>
+                &#11088; No return type but have parameters <br>
+                &#11088; Have return type No parameters <br>
+                &#11088; Have return type and also have parameters</p>
+                &#9749; nenu static keyword kosam cheptha anna kadha, ah time vacchindi lets go &#129321; <br>
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p><br>
+                <p class="ten"><span class="return">void </span><span class="method">pilavandiSir</span>() {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Namaskaram niranjan gaaru"</span>);</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="file">MyClass</span> haha = <span class="public">new </span><span class="file">MyClass</span>();</p><br>
+                <p class="ten2">haha.<span class="method">pilavandiSir</span>();</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Namaskaram niranjan gaaru</p>
+            </div>
+            &#9749; void means method em return cheyyadu. if two numbers addition ni return cheyyalante void place lo numeric data type pettukovali according to your size. if value is &#60; 127 you can replace void by byte return type <br>
+            &#9749; nen cheppa ga konni classes ki like Scanner, Array, Math, etc,. vatiki static methods untay no need to create objects. ippudu manam paina unna example ki static keyword tho cheddam <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p><br>
+                <p class="ten"><span class="static">static</span> <span class="return">void </span><span class="method">pilavandiSir</span>() {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Namaskaram niranjan gaaru"</span>);</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="method">pilavandiSir</span>();</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Namaskaram niranjan gaaru</p>
+            </div>
+            &#9749; choosaru ga simple ga object cheyyakunda manam method ni access chesam. outside of main method lo unna static varibles ni kooda manam access cheyyocchu. static ante like google map la intlo undi world antha access cheyocchu anatlu static members ni access cheyyochu easy ga <br>
+            
+            &#11088; ippude manam No return type  No parameters way choosesam, lets go for second way No return type but have parameters <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p><br>
+                <p class="ten"><span class="static">static</span> <span class="return">void </span><span class="method">calculate</span>(<span class="type">int</span> one) {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(one + <span class="msg">5</span>);</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="method">calculate</span>(<span class="msg">5</span>);</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>10</p>
+            </div>
+            &#9749; main method lo calculate(5) ani undi kadha akkada 5 ante argument, calculate method lo int one ani undi kadha adhi parameter <br>
+            &#9749; manam method ni call chesinappudu 5 ane argument calculate method ki pass avtundi, parameter ah pass ayna argument ni teeskoni operation ni perform chestundi <br>
+            
+            &#11088; let's go for Have return type No parameters way <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p><br>
+                <p class="ten"><span class="static">static</span> <span class="return">byte </span><span class="method">calculate</span>() {</p><br>
+                <p class="ten2"><span class="static">return </span><span class="msg">5</span> + <span class="msg">6</span>;</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="method">calculate</span>());</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>11</p>
+            </div>
+
+            &#11088; let's go for Have return type and also have parameters way <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p><br>
+                <p class="ten"><span class="static">static</span> <span class="return">int </span><span class="method">calculate</span>(<span class="type">int</span> one) {</p><br>
+                <p class="ten2"><span class="static">return </span><span class="msg">5</span> + one;</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="method">calculate</span>(<span class="msg">8</span>));</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>13</p>
+            </div>
+
+            &#9749; ippudu meeku java syntax antha ardamavtundi oka look veyyandi, syntax lo unna pratidi ardamavtundi <br>
+            &#9749; Open IDE and practice once meeku kooda oka idea vastundi. <br>
+
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/access_modifiers.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/enums.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

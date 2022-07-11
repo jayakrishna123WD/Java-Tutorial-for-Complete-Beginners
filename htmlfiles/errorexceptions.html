@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Exceptions</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Error Exceptions</h3>
+            <div class="tab">
+                <a href="../htmlfiles/collections.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/conclusion.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; code ni compile chesinappudu yedaina error vaste irritate avtam kadha <br>
+                <img src="../images/iritate.gif" alt="irritate" class="same">
+                &#9749; errors ni handle cheyyadaniki use ayye concept ye idhi <br>
+                &#9749; Try Catch block Exceptions ni handle chestay. try block lo unna code without execute aythe ok, if error vaste exception ni throw chestundi catch block ah visiresina exception ni teeskoni meru mention chesina code ni execute chestundi <br>
+                <img src="../images/exception.jpg" alt="exception" class="same">
+                &#9749; oka example chooste meeke ardamaipotundi <br>
+                <div class="design code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">try</span> {</p><br>
+                    <p class="ten3"><span class="type">int</span> res = <span class="msg">1</span>/<span class="msg">0</span>;</p><br>
+                    <p class="ten2">}</p><br>
+                    <p class="ten2"><span class="type">catch</span>(<span class="str">Exception</span> e){</p><br>
+                    <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"okati takkuvaindi"</span>);</p> <br>
+                    <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(e);</p>
+                    <p class="ten2">}</p><br>
+                    <p class="ten">}</p><br>
+                    <p>}</p>
+                </div>
+                <div class="design output">
+                    <div class="flo"><p>output</p></div>
+                    <p>okati takkuvaindi <br>java.lang.ArithmeticException: / by zero</p>
+                </div>
+                &#9749; paina unna code lo error vaste particular message print ayyela manam cheyyochu. e anedi oka variable la which stores the type of error caused in try block <br>
+                &#9749; anduke e ni print chesi nappudu manaki type of error em vacchindo print ayyindi, oka try block yenni catch blocks ayina undocchu <br>
+                &#9749; we can mention type of error in catch block. yeppudaite ah mention chesina error vastundo appudu catch block lo unna code work avtundi. try and catch ki finally ane block kooda undi, errors tho relation lekunda ah finally block confirm ga execute avtundi <br>
+
+                <div class="design code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">try</span> {</p><br>
+                    <p class="ten3"><span class="str">String</span> name = <span class="type">null</span>;</p><br>
+                    <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">length</span>());</p> <br>
+                    <p class="ten2">}</p><br>
+                    <p class="ten2"><span class="type">catch</span>(<span class="str">NullPointerException</span> e){</p><br>
+                    <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"error vacchindi nayana"</span>);</p><br>
+                    <p class="ten2">}</p><br>
+                    <p class="ten2"><span class="type">finally</span> {</p><br>
+                    <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"nekocchesindi"</span>);</p> <br>
+                    <p class="ten2">}</p><br>
+                    <p class="ten">}</p><br>
+                    <p>}</p>
+                </div>
+                <div class="design output">
+                    <div class="flo"><p>output</p></div>
+                    <p>error vacchindi nayana <br> nekocchesindi</p>
+                </div>
+                &#9749; null ante null ye em ledu kali ani <br>
+            </p>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/collections.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/conclusion.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

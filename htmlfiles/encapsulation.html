@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Encapsulation</h3>
+            <div class="tab">
+                <a href="../htmlfiles/enums.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/inheritance.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Core Concepts of Object-Oriented Programming : <br>
+                <p class="ten">&#11088; Encapsulation</p>
+                <p class="ten">&#11088; Inheritance</p>
+                <p class="ten">&#11088; Polymorphism</p>
+                <p class="ten">&#11088; Abstraction</p>
+            </p>
+            &#9749; In this webpage we'll discuss about Encapsulation <br>
+            &#9749; Oka class lo private access modifier data unte adhi encapsulation loki vastundi <br>
+            &#9749; ante simply nenu me phone dachesa but meeru call cheste ring meeku vinapadtundi kani phone yekkada undo meku telidu exact ga adhe encapsulation ante. <br>
+            &#9749; ippudu ah private data ni ah class lo unna members access cheskogalav, outside classes ki restriction untundi can't access the data <br>
+            &#9749; kani manam ah class lo unna private data ni ,public methods use chesi access cheyyochu. Those methods are called getters and setters <br>
+            &#9749; getters and setters ante just methods ye yevo kaadu vati names me istam vachinattu pettukovachu just simple ga untundi ani getters and setter antaru andaru ok na <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">class</span> <span class="file">NeBank</span> {</p><br>
+                <p class="ten"><span class="public">private </span><span class="type">int</span> balance = <span class="msg">10000</span>;</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void </span><span class="method">setChesta</span>(<span class="type">int</span> amount) {</p><br>
+                <p class="ten2"><span class="public">this</span>.balance += amount;</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">int </span><span class="method">chooskoraMuthyam</span>() {</p><br>
+                <p class="ten2"><span class="static">return </span><span class="public">this</span>.balance;</p><br>
+                <p class="ten">}</p><br>
+                <p>}</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="file">NeBank</span> neaccount = <span class="public">new</span> <span class="file">NeBank</span>();</p><br>
+                <p class="ten2">neaccount.<span class="method">setChesta</span>(<span class="msg">5000</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(neaccount.<span class="method">chooskoraMuthyam</span>());</p> <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>15000</p>
+            </div>
+
+            &#9749; this keyword valla use enti ante, if parameter variable(amount) name class lo unna variable(balance) name same anukondi appudu confusion undakunda ee this keyword ni use chestam this keywords tells that the value is refers to current object in a method. <br>
+            &#9749; class ki object create chesinappudu automatic ga oka method call avtundi(invoke), that method is called constructor method. Every class have constructor method and it's invoke when object was created. <br>
+            &#9749; balance variable lo manam munde cash enter chesesam kadha, ippudu using constructor method we can provide. basically ee constructor method, It can be used to set initial values for object attributes. same as others methods but it doesn't have return type. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">class</span> <span class="file">NeBank</span> {</p><br>
+                <p class="ten"><span class="public">private </span><span class="type">int</span> balance;</p><br>
+                <p class="ten"><span class="method">NeBank </span>(<span class="type">int</span> balance) {</p><br>
+                <p class="ten2"><span class="public">this</span>.balance = balance;</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void </span><span class="method">setChesta</span>(<span class="type">int</span> amount) {</p><br>
+                <p class="ten2"><span class="public">this</span>.balance += amount;</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">int </span><span class="method">chooskoraMuthyam</span>() {</p><br>
+                <p class="ten2"><span class="static">return </span><span class="public">this</span>.balance;</p><br>
+                <p class="ten">}</p><br>
+                <p>}</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="file">NeBank</span> neaccount = <span class="public">new</span> <span class="file">NeBank</span>(<span class="msg">10000</span>);</p><br>
+                <p class="ten2">neaccount.<span class="method">setChesta</span>(<span class="msg">5000</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(neaccount.<span class="method">chooskoraMuthyam</span>());</p> <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>15000</p>
+            </div>
+
+            &#9749; getter setter methods enti ante data ni manipulate cheyyadaniki setter method, data ni access cheyyaniki getter method use chestaru <br>
+            &#9749; ippudu meeru cheppandi paina code lo yedi setter and getter method ohhhh. <br>
+            &#9749; yes, you got it, setChesta() method is setter and chooskoraMuthyam() method is getter. names tho em problem ledu Concept chooskondi ante <br>
+            &#9749; IDE open chey code practice chey neku oka idea vacchestadi. <br>
+            &#9749; Don't forget about naming conventions when naming classes and methods <br>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/enums.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/inheritance.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

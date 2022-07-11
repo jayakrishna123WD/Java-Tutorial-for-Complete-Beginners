@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/string.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">String</h3>
+            <div class="tab">
+                <a href="../htmlfiles/classes_objects.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/userinput.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Non-primitive data types lo string okati. difference between primitive and Non-primitive datatypes is primitive can't store collection of data while Non-primitive can store collection of data like arrays, strings, etc. <br>
+                &#9749; char datatype lo only one character matrame store cheskogalam kani collection of characters ni store cheskunede string <br>
+                &#9749; String --- value, which are mentioned in between double quotation marks are string data type. <br>
+                &#9749; String and System lo s capital marchipokandi.. <br>
+                &#9749; String index starts from 0 we can access string characters using index <br>
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="str">String </span>name = <span class="msg">"Your Name"</span>;</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name);</p> 
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Your Name</p>
+            </div>
+            &#9749; Another way to create string variable is : <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="str">String </span>name = <span class="public">new</span> <span class="str">String</span>(<span class="msg">"Your name"</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name);</p> 
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Your Name</p>
+            </div>
+            &#9749; String methods manaki konni situations lo chala help avtay, avento choodam randi <br>
+            <img src="../images/letsgo.gif" alt="padandi" class="same">
+            &#9749; let's perform all string methods on previously created string variable <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"Your Name"</span>;</p><br>
+            </div>
+
+            &#9749; lenght() Method --- length of a string <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">lenght</span>());</p> <br>
+                <p class="ten">// 9</p>
+            </div>
+
+            &#9749; charAt() Method --- the character at the specified index(index starts from zero) <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">charAt</span>(<span class="msg">2</span>));</p> <br>
+                <p class="ten">// u</p>
+            </div>
+
+            &#9749; concat() Method --- Addition of two Strings(concatenate of two Strings) <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>first_name = <span class="msg">"Your First_Name "</span>;</p><br>
+                <p class="ten"><span class="str">String </span>last_name = <span class="msg">"Your Last_Name"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(first_name.<span class="method">concat</span>(last_name));</p> <br>
+                <p class="ten">// Your First_Name Your Last_Name</p>
+            </div>
+
+            &#9749; contains() Method --- String contains a sequence of characters <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">contains</span>(<span class="msg">"ou"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">contains</span>(<span class="msg">"ouj"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+            </div>
+
+            &#9749; equals() and contentEquals() Method --- comparing two Strings <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">contentEquals</span>(<span class="msg">"Your Name"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">contentEquals</span>(<span class="msg">"YourName"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+                <p class="ten">//space remove chesesam, anduke result false.</p><br>
+                <p>// equals() Method same as this </p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">equals</span>(<span class="msg">"Your Name"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">equals</span>(<span class="msg">"YourName"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+            </div>
+            &#9749; startsWith() Method --- Checks whether a string starts with specified characters <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">startsWith</span>(<span class="msg">"Your"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">startsWith</span>(<span class="msg">"our"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+            </div>
+
+            &#9749; endsWith() Method --- string ends with the specified character <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">endsWith</span>(<span class="msg">"Name"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">endsWith</span>(<span class="msg">"ers"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+            </div>
+
+            &#9749; equalsIgnoreCase() Method --- Compares two strings, ignoring case considerations <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">equalsIgnoreCase</span>(<span class="msg">"YOUR NAME"</span>));</p> <br>
+                <p class="ten">// true</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">equalsIgnoreCase</span>(<span class="msg">"YOURname"</span>));</p> <br>
+                <p class="ten">// false</p><br>
+                <p>//uppercase or lowercase yedaina sare values equal aythe true lekapote false</p><br>
+            </div>
+
+            &#9749; indexOf() Method --- Returns the position of the first found occurrence of specified characters in a string <br>
+            &#9749; ee method lo 4 types unnay, those methods are <br>
+            &#9733; indexOf(String str) -- Returns mentioned string first occurrence in string<br>
+            &#9733; indexOf(String str, int fromIndex) -- Returns mentioned string which occurs from mentioned index<br>
+            &#9733; indexOf(int char) -- Returns mentioned character first occurrence in string<br>
+            &#9733; indexOf(int char, int fromIndex) Returns mentioned character which occurs from mentioned index<br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">indexOf</span>(<span class="msg">"Name"</span>));</p> <br>
+                <p class="ten">// 5</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">indexOf</span>(<span class="msg">"ur"</span>, <span class="msg">4</span>));</p> <br>
+                <p class="ten">// -1</p><br>
+                <p class="ten">//index 4 taruvata ur occurrence ledu kadha anduke -1 vacchindi</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">indexOf</span>(<span class="msg">'r'</span>));</p> <br>
+                <p class="ten">// 3</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">indexOf</span>(<span class="msg">'m'</span>, <span class="msg">5</span>));</p> <br>
+                <p class="ten">// 7</p><br>
+                <p class="ten">//index 5 nunchi m occurrence index value 7 deggara ayyindi kadha anduke output 7</p>
+            </div>
+
+            &#9749; isEmpty() Method --- Checks whether a string is empty or not <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>first_name = <span class="msg">"Your First_Name "</span>;</p><br>
+                <p class="ten"><span class="str">String </span>last_name = <span class="msg">""</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(first_name.<span class="method">isEmpty</span>());</p> <br>
+                <p class="ten">//false</p>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(last_name.<span class="method">isEmpty</span>());</p> <br>
+                <p class="ten">//true</p>
+            </div>
+
+            &#9749; lastIndexOf() Method --- Returns the position of the last found occurrence of specified characters in a string <br>
+            &#9749; ee method lo 4 types unnay, those methods are <br>
+            &#9733; lastIndexOf(String str) -- Returns mentioned string last occurrence in string<br>
+            &#9733; lastIndexOf(String str, int fromIndex) -- Returns mentioned string which is last occured from mentioned index<br>
+            &#9733; lastIndexOf(int char) -- Returns mentioned character last occurrence in string<br>
+            &#9733; lastIndexOf(int char, int fromIndex) Returns mentioned character which is last occured from mentioned index<br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"honor"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">lastIndexOf</span>(<span class="msg">"or"</span>));</p> <br>
+                <p class="ten">// 3</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">lastIndexOf</span>(<span class="msg">"o"</span>, <span class="msg">2</span>));</p> <br>
+                <p class="ten">// 1</p><br>
+                <p class="ten">//index 2 ki mundu character o last occurrence index 1 lo undi anduke output 1 vacchindi</p><br>
+            </div>
+
+            &#9749; replace() Method --- Searches a string for a specified value, and returns a new string where the specified values are replaced <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"fafam"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">replace</span>(<span class="msg">'f'</span>, <span class="msg">'p'</span>));</p> <br>
+                <p class="ten">// papam</p><br>
+                <p class="ten">//character f is replaced by p</p><br>
+            </div>
+
+            &#9749; substring() Method --- Returns a new string which is the substring of a specified string <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"web development"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">substring</span>(<span class="msg">1</span>, <span class="msg">7</span>));</p> <br>
+                <p class="ten">// eb dev</p><br>
+                <p class="ten">//it prints the string from start index upto end index-1, upto 7 means it prints upto index 6</p><br>
+            </div>
+
+            &#9749; toLowerCase() Method --- Converts a string to lower case letters <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"WEB Development"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">toLowerCase</span>());</p> <br>
+                <p class="ten">// web development</p><br>
+            </div>
+
+            &#9749; toUpperCase() Method --- Converts a string to upper case letters <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"WEB Development"</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">toUpperCase</span>());</p> <br>
+                <p class="ten">// WEB DEVELOPMENT</p><br>
+            </div>
+
+            &#9749; trim() Method --- Removes whitespace from both ends of a string <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p class="ten"><span class="str">String </span>name = <span class="msg">"         web development   "</span>;</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(name.<span class="method">trim</span>());</p> <br>
+                <p class="ten">// web development</p><br>
+            </div>
+
+            &#9733; escape sequence in java:
+            <img src="../images/escapesequence.jpg" alt="escape sequence in java" class="same">
+            <br>
+            <hr class="divider">
+            &#9749; different ways to print in JAVA: <br>
+            &#9733; System.out.println(); prints a new line at the end. <br>
+            &#9733; System.out.print(); no new line at the end <br>
+            &#9733; System.out.printf(); and System.out.format(); both are similar <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">print</span>(<span class="msg">"Hello "</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Namaste"</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">print</span>(<span class="msg">"yela unnaru"</span>);</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Hello Namaste <br>yela unnaru</p>
+            </div>
+            <hr class="divider">
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">printf</span>(<span class="msg">"My name is %s \n"</span>, <span class="msg">"ne name"</span> );</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">printf</span>(<span class="msg">"My age is %d \n"</span>, <span class="msg">ne age</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">printf</span>(<span class="msg">"My gender is %c \n"</span>, <span class="msg">'ne gender'</span>);</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">printf</span>(<span class="msg">"My height is %.1f \n"</span>, <span class="msg">ne height</span>);</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>My name is ne name <br>My age is ne age <br> My gender is ne gender <br>My height is ne height</p>
+            </div>
+            &#9749; paina code lo escape sequence use chesa new line kosam and .1f enduku ante upto 1 decimal places print aythe chaalu anedi na requirement. if 2 decimal places kavalante .2f use cheyyali anthe.
+        </div>
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/classes_objects.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/userinput.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

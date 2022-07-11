@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/classes_objects.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Objects</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Classes and Objects</h3>
+            <div class="tab">
+                <a href="../htmlfiles/while_loop_statements.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/string.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                <h4 class="headings">OOPS:</h4>
+                &#9749; Procedural programming lo functions data ni use cheskoni operations ni perform chestay, functions ki data store chese feature ledu.<br>
+                &#9749; Object-Oriented Programming lo objects untay vatilo data and methods untay. functions ne methods antam oops terminology lo. Ikkada object ante yedo kaadu variable le kani difference yelantidi ante <br>
+                &#9749; variable is like pen lo refill lantidi yenni sarlaina replace cheskovacchu, kani refill lo undedi only ink matrame inkem speciality undadu <br>
+                &#9749; Object is like box la danilo pens, pencils, erasers, sharpener, scale ila chala untay (daniki oka structure untundi, data untundi, methods untay) <br>
+                &#9749; Structure of class ki oka example choodam..<br>
+                <div class="design main">
+                    <div class="tag">Body</div>
+                    <div class="syntax one">
+                        <div class="a">
+                            <h4>Attributes</h4>
+                            <p>name</p>
+                            <p>height</p>
+                            <p>weight</p>
+                            <p>gender</p>
+                        </div>
+                        <div class="b">
+                            <h4>Behaviour</h4>
+                            <p>walk()</p>
+                            <p>run()</p>
+                            <p>speak()</p>
+                            <p>sleep()</p>
+                        </div>
+                    </div>
+                </div>
+                &#9749; mana body kooda oka class ye, nenu oka object ni body ane class ki meeru kooda oka object ye <br>
+                &#9749; object is an instance of a class. ardam kaaleda detailed ga cheppukundam randi <br>
+                <img src="../images/pendrive.jpg" alt="pendrive" class="same">
+                &#9749; world lo yekkadaina deenini choodagane pendrive ane antaru because its structure defines that it was a pendrive 
+                alane class kooda anthe its like a template indulo attributes(variables) and methods(functions) untay. <br>
+                &#9749; ee class ke manam object create chestam ante ippudu bank lo amount store cheyyalante meku oka account kavali ga ah account ye object ikkada bank ane class lo chaala methods untay like balance, withdraw, deposit, etc.. 
+                mana bank account use cheskoni ah methods ni access chestunnam kadha same concept ikkada kooda. so, pendrive class ki objects choddam <br>
+                <img src="../images/pendrivecomp.png" alt="companies" class="same">
+                &#9749; ippudu nen 3 objects choopistunna vati names sony, sandisk and hp. each object ki seperate specifications untay like sony pendrive 16gb capacity, sandisk -- 64gb, hp -- 32gb. ee respective objects ni use chesi data ni store chestunnam class lo unna
+                 methods help tho like read method and write methods and folder attributes. <br>
+                &#9749; inka clarity ga cheppalante class ki attributes, methods untay kani identity undadu same like mana pushpa raju ni police lu antaru kadha ala. identity lenodu class. <br>
+                &#9749; if identity exists that should be called as object. like em leni kali pendrive class ki identity add cheste that will becomes sony, sandisk, hp pendrives. oka class ki yenni objects ayina create cheyyochu. there's no limit.<br>
+                &#9749; final ga nen cheppedentante object is independent unit with unique identity, and it have characteristics like attributes, methods and identity <br>
+                &#9749; class is like blue print, syllabus, description for an object. Object ante just oka variable lantidi anthe, methods and attributes undevi class lone. 
+                bank account use chesi bank services access chesi nattu, object use chesi class lo methods and attributes ni access cheskuntam anthe. <br>
+                &#9749; Hope you understand the concept, ardam kakapote malli chadavandi okasari <br>
+                &#9749; class and object ki syntax choodam.
+                <div class="syntax">
+                    <div class="syn1">
+                        &#9749; <u><b>class Syntax:</b></u> <br>
+                        <p class="ten">class ClassName {<br> <span class="ten2">//code block;</span><br> }<br></p> 
+                    </div>
+                    <div class="syn2">
+                        &#9749; <u><b>Object Syntax:</b></u> <br>
+                        <p class="ten">//in main method</p> 
+                        <p class="ten">ClassName objectName = new ClassName();</p>
+                    </div>
+                </div>
+                &#9749; new yenti ante objects ni create chesetappudu use chestaru it reflects that this is a new object. <br>
+                &#9749; let's create object for class pendrive  <br>
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">class</span> <span class="file">Pendrive</span> {</p><br>
+                <p>}</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <p>&#9749; do not forget Naming Convention while creating methods and classes gurtundi ga <br>
+                PascalConvention for classes <br> camelCaseConvention for methods</p>
+            <p>&#9749; class mundu public pedite error vastundi bacause java only contain one public class in a file, and too ah public class name must matches with file name. meeru class mundu public pedite confirm ga ah class antha new file lone declare cheyyali 
+                and don't forget that public class name must matches to file name that you created. <br>
+                &#9749; let's create object for pendrive class with attribute and print the size of pendrive.
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">class</span> <span class="file">Pendrive</span> {</p><br>
+                <p class="ten"><span class="type">byte</span> Size;</p><br>
+                <p>}</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="file">Pendrive</span> sony = <span class="public">new</span> <span class="file">Pendrive</span>();</p><br>
+                <p class="ten2"><span class="file">Pendrive</span> sandisk = <span class="public">new</span> <span class="file">Pendrive</span>();</p><br>
+                <p class="ten2"><span class="file">Pendrive</span> hp = <span class="public">new</span> <span class="file">Pendrive</span>();</p><br>
+                <p class="ten2">sony.Size = <span class="msg">16</span>;</p><br>
+                <p class="ten2">sandisk.Size = <span class="msg">64</span>;</p><br>
+                <p class="ten2">hp.Size = <span class="msg">32</span>;</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(sony.Size);</p> <br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(sandisk.Size);</p> <br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(hp.Size);</p> <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>16 <br> 64 <br> 32</p>
+            </div>
+            <p>&#9749; anthe simple ide class and object ante okasari IDE open chesi meeru kooda try cheyyandi ardam kakapote inkosari chadavandi..</p>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/while_loop_statements.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/string.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

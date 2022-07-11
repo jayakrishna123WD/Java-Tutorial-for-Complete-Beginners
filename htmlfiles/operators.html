@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/operators.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Operators</h3>
+            <div class="tab">
+                <a href="../htmlfiles/variables.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/conditional_switch_statements.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                sum = num1 + num2; <br>
+                num1 and num2 --- operands <br>
+                + --- operator <br>
+                &#9749; Operators in JAVA <br>
+                <ol class="item">
+                    <li>Arithmetic Operators</li>
+                    <li>Assignment Operators</li>
+                    <li>Relational Operators</li>
+                    <li>Logical Operators</li>
+                    <li>Unary Operators</li>
+                    <li>Bitwise Operators</li>
+                    <li>Ternary Operator</li>
+                </ol>
+                &#9749; <strong>Arithmetic Operators</strong> <br>
+                <ol class="item">
+                    <li>(+) --- Addition</li>
+                    <li>(-) --- Subtraction</li>
+                    <li>(*) --- Multiplication</li>
+                    <li>(/) --- Division</li>
+                    <li>(%) --- Modulo Operation (Remainder after division)</li>
+                </ol>
+                <div class="code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">byte</span> <span class="var">total</span> = <span class="msg"> 8 + 2</span>; //total = 10</p><br>
+                    <p class="ten2"><span class="var">total</span> = <span class="msg"> 8 - 2</span>; //total = 6</p><br>
+                    <p class="ten2"><span class="var">total</span> = <span class="msg"> 8 * 2</span>; //total = 16</p><br>
+                    <p class="ten2"><span class="var">total</span> = <span class="msg"> 8 / 2</span>; //total = 4</p><br>
+                    <p class="ten2"><span class="var">total</span> = <span class="msg"> 8 % 2</span>; //total = 0 (Remainder zero)</p><br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                &#9749; <strong>Assignment Operators</strong><br>
+                <ol class="item">
+                    <li>a = 9</li>
+                    <li>a += 9 (a = a+9)</li>
+                    <li>a -= 9 (a = a-9)</li>
+                    <li>a *= 9 (a = a*9)</li>
+                    <li>a /= 9 (a = a/9)</li>
+                    <li>a %= 9 (a = a%9)</li>
+                </ol>
+                <div class="code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">byte</span> <span class="var">total</span> = <span class="msg"> 10</span>; //total = 10</p><br>
+                    <p class="ten2"><span class="var">total</span> += <span class="msg"> 2</span>; //total = 12</p><br>
+                    <p class="ten2"><span class="var">total</span> -= <span class="msg"> 1</span>; //total = 11</p><br>
+                    <p class="ten2"><span class="var">total</span> *= <span class="msg"> 5</span>; //total = 55</p><br>
+                    <p class="ten2"><span class="var">total</span> /= <span class="msg"> 2</span>; //total = 27</p><br>
+                    <p class="ten2"><span class="var">total</span> %= <span class="msg"> 2</span>; //total = 1</p><br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                &#9749; <strong>Relational Operators</strong><br>
+                <ol class="item">
+                    <li>== --- Is Equal To</li>
+                    <li>!= --- Not Equal To</li>
+                    <li>&#62; --- Greater Than</li>
+                    <li>&#60; --- Less Than</li>
+                    <li>&#62;= --- Greater Than or Equal To</li>
+                    <li>&#60;= --- Less Than or Equal To</li>
+                </ol>
+                <div class="code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">byte</span> <span class="var">number_one</span> = <span class="msg"> 10</span>, <span class="var">number_two</span> = <span class="msg"> 20</span>;</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one == number_two</span>);</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one != number_two</span>);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one &#62; number_two</span>);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one &#60; number_two</span>);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one &#62;= number_two</span>);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">number_one &#60;= number_two</span>);</p> <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                <div class="output">
+                    <div class="flo"><p>output</p></div>
+                    <p>false<br> true<br>false <br>true <br>false <br>true</p>
+                </div>
+                &#9749; <strong>Logical Operators</strong><br>
+                <ol class="item">
+                    <li>&& --- Logical AND (operands true aythene output true vastundi)</li>
+                    <li>|| --- Logical OR (oka operand true ayina output true vastundi)</li>
+                    <li>! --- Logical NOT (operand value reverse avtundi, true--false avtundi and false--true avtundi</li>
+                </ol>
+                <div class="code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2">// && Operator</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>((<span class="msg">10</span> &#62; <span class="msg">7</span>) && (<span class="msg">20</span> == <span class="msg">20</span>));</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>((<span class="msg">35</span> &#60; <span class="msg">15</span>) && (<span class="msg">20</span> != <span class="msg">30</span>));</p><br>
+                    <p class="ten2">// || Operator</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>((<span class="msg">20</span> &#62; <span class="msg">45</span>) || (<span class="msg">20</span> &#62; <span class="msg">7</span>));</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>((<span class="msg">20</span> &#60; <span class="msg">45</span>) || (<span class="msg">20</span> &#62; <span class="msg">7</span>));</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>((<span class="msg">30</span> == <span class="msg">45</span>) || (<span class="msg">20</span> &#62; <span class="msg">56</span>));</p><br>
+                    <p class="ten2">// ! Operator</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(!(<span class="msg">30</span> == <span class="msg">45</span>));</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(!(<span class="msg">30</span> &#60; <span class="msg">45</span>));</p><br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                <div class="output">
+                    <div class="flo"><p>output</p></div>
+                    <p>true //true and true results true <br>
+                    false // false and true results false <br>
+                    true  // false or true results true <br>
+                    true // true or true results true <br>
+                    false // false or false results false <br>
+                    true //not false results true <br>
+                    false // not true results false</p>
+                </div>
+                &#9749; <strong>Unary Operators</strong><br>
+                <ol class="item">
+                    <li>+ --- Unary plus</li>
+                    <li>- --- Unary minus</li>
+                    <li>++ --- Increment operator</li>
+                    <li>-- --- Decrement operator</li>
+                    <li>! --- Logical complement operator</li>
+                </ol>
+                <div class="code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="type">byte</span> <span class="var">total</span> = <span class="msg"> 10</span>; //total = 10</p><br>
+                    <p class="ten2">// postfix (variable++, variable--)</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">total</span>++); //output-10, total = 11</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="var">total</span>--); //output-11, total = 10</p> <br>
+                    <p class="ten2">// prefix (++variable, --variable)</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(++<span class="var">total</span>); //output-11, total = 11</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(--<span class="var">total</span>); //output-10, total = 10</p> <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                &#9749; <strong>Bitwise Operators</strong><br>
+                <ol class="item">
+                    <li>~ --- Bitwise Complement</li>
+                    <li>&#60;&#60; --- 	Left Shift</li>
+                    <li>&#62;&#62; --- Right Shift</li>
+                    <li>&#62;&#62;&#62; --- Unsigned Right Shift</li>
+                    <li>& --- 	Bitwise AND</li>
+                    <li>^ --- 	Bitwise exclusive OR</li>
+                </ol>
+                &#9749; <strong>Ternary Operator</strong><br>
+                <ol class="item">
+                    <li>? :</li>
+                    <li>variable = condition ? expression1 : expression2</li>
+                </ol>
+                if condition is true expression1 is stored in variable <br>
+                if condition is false expression2 is stored in variable. <br>
+                &#9749; <strong>Java Operators precedence</strong><br>
+                <img src="../images/operator precedence.png" alt="" class="same">  
+            </p>
+
+            <p>Ternary Operator example:</p>
+            <div class="code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="type">boolean</span> <span class="var">choice</span> = 5 > 3;</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">choice ? "5" : "3"</span>);</p> 
+                <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="output">
+                <div class="flo"><p>output</p></div>
+                <p>5</p>
+            </div>
+            <p>5 is Greater than 3 kadha so, choice lo true store avtundi, then condition true kabatti obviously expression1 print avtundi. <br>
+            oka sari IDE open chesi anni operators ni try chesarante oka idea vacchestundi.</p>
+
+
+
+        </div>
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/variables.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/conditional_switch_statements.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
