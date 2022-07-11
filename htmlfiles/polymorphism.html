@@ -32,26 +32,34 @@
                 <p class="ten2">&#9733; Another name is Method Overloading, Methods have same name having different parameters</p>
                 <p class="ten"><h4>&#11088; <b>runtime polymorphism</b> </h4></p>
                 <p class="ten2">&#9733; Another name is Method Overriding <br>
-                &#9733; Methods must maintain same return type and parameters, access level should be public </p></p>
+                &#9733; Methods must maintain same return type and parameters, access level should be public </p>
+                <p class="ten2">&#9733; parent class lo oka method undi danne child class lo kooda use chesam, ippudu meeru child class ki object create chesaru same method kadha meru call chesinappudu child class lo unna method work avtundi ee process ye method Overriding.</p>
+            </p>
             </p>
             &#9749; <img align="middle" width="170px" src="../images/aparichitudu.jpg" alt="aparichitudu"> movie lo hero ki multiple personality disorder untundi ga, ante oka person ki three different personalities untay alane polymorphism kooda okate method name but different implementation. <br>
             <h4>&#11088; Method Overriding</h4>
                 <div class="design code">
                     <div class="flo"><p>JAVA</p></div>
                     <br>
-                    <p><span class="class">class</span> <span class="file">Ramu</span> {</p><br>
+                    <p><span class="class">class</span> <span class="file">Personalities</span> {</p><br>
+                    <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">Person</span>() {</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Nenu print avvalenu &#128546;"</span>);</p> <br>
+                    <p class="ten">}</p><br>
+                    <p>}</p><br>
+
+                    <p><span class="class">class</span> <span class="file">Ramu</span> <span class="class">extends</span> <span class="file">Personalities</span> {</p><br>
                     <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">Person</span>() {</p><br>
                     <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Nenu ramu"</span>);</p> <br>
                     <p class="ten">}</p><br>
                     <p>}</p><br>
 
-                    <p><span class="class">class</span> <span class="file">Remo</span> {</p><br>
+                    <p><span class="class">class</span> <span class="file">Remo</span> <span class="class">extends</span> <span class="file">Personalities</span> {</p><br>
                     <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">Person</span>() {</p><br>
                     <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"I am REMO"</span>);</p> <br>
                     <p class="ten">}</p><br>
                     <p>}</p><br>
 
-                    <p><span class="class">class</span> <span class="file">Aparichitudu</span> {</p><br>
+                    <p><span class="class">class</span> <span class="file">Aparichitudu</span> <span class="class">extends</span> <span class="file">Personalities</span> {</p><br>
                     <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">Person</span>() {</p><br>
                     <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Nenu Aparichitudu"</span>);</p> <br>
                     <p class="ten">}</p><br>
@@ -106,7 +114,7 @@
                 <img src="../images/aparichitududialogue.gif" alt="aparichitududialogue" class="same">
 
                 &#9749; method name okate kani mana requirement batti yenni sarlu ayina diferent purposes ki implement cheskovacchu <br>
-                &#9749; above code is example for method Overriding because Person method access level is public and anni methods ki same return type undi.<br>
+                &#9749; above code is example for method Overriding because parent class lo unna person method ni child classes method Override chestundi so, child class lo unna methods ye run avtay & also Person method access level is public and anni methods ki same return type undi.<br>
                 
                 <h4>&#11088; Method Overloading</h4>
                 <div class="design code">
