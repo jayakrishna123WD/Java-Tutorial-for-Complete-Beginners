@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Inheritance</h3>
+            <div class="tab">
+                <a href="../htmlfiles/encapsulation.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/polymorphism.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; ee topic ni me family tho compare cheskondi easy ga ardamavtundi, meru child class and me parents parent class <br>
+                &#9749; child class parent class ni inherit chestundi, ippudu meku object create chesamanukondi. By using your object me information and your parent information ni access cheyyochu <br>
+                &#9749; simply one class can access attributes and methods in another class, yela aythe me nunchi me information and me parents information access cheyyocho ala <br> 
+                &#9749; using extends keyword oka class ni inherit cheyyochu. Parent class called as super class and Chid class called as sub class<br>
+                &#9749; Types of Inheritance in JAVA: <br>
+                <p class="ten">&#9733; Single Inheritance <br>
+                    &#9733; Multilevel Inheritance <br>
+                    &#9733; Hierarchical Inheritance <br>
+                    &#9733; Hybrid Inheritance <br>
+                    &#9733; Multiple Inheritance <br>
+                </p>
+                <img src="../images/inheritance.jpg" alt="inheritance" class="same">
+                <h4>&#11088; Single Inheritance</h4>
+                <div class="design code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="class">class</span> <span class="file">Dad</span> {</p><br>
+                    <p class="ten"><span class="str">String</span> father_name = <span class="msg">"your father name"</span>;</p><br>
+                    <p>}</p><br>
+                    <p><span class="class">class</span> <span class="file">You</span> <span class="class">extends</span> <span class="file">Dad</span> {</p><br>
+                    <p class="ten"><span class="str">String</span> your_name = <span class="msg">"your name"</span>;</p><br>
+                    <p>}</p><br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="file">You</span> details = <span class="public">new</span> <span class="file">You</span>();</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(details.father_name);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(details.your_name);</p> <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                <div class="design output">
+                    <div class="flo"><p>output</p></div>
+                    <p>your father name <br>your name</p>
+                </div>
+                &#9749; me object use chesi me class and me parent class lo details ni access chesam <br>
+
+
+                <h4>&#11088; Multilevel Inheritance</h4>
+                <div class="design code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="class">class</span> <span class="file">GrandFather</span> {</p><br>
+                    <p class="ten"><span class="str">String</span> grandfather_name = <span class="msg">"your grand father name"</span>;</p><br>
+                    <p>}</p><br>
+                    <p><span class="class">class</span> <span class="file">Dad</span> <span class="class">extends</span> <span class="file">GrandFather</span>{</p><br>
+                    <p class="ten"><span class="str">String</span> father_name = <span class="msg">"your father name"</span>;</p><br>
+                    <p>}</p><br>
+                    <p><span class="class">class</span> <span class="file">You</span> <span class="class">extends</span> <span class="file">Dad</span> {</p><br>
+                    <p class="ten"><span class="str">String</span> your_name = <span class="msg">"your name"</span>;</p><br>
+                    <p>}</p><br>
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="file">You</span> details = <span class="public">new</span> <span class="file">You</span>();</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(details.grandfather_name);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(details.father_name);</p> <br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(details.your_name);</p> <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                <div class="design output">
+                    <div class="flo"><p>output</p></div>
+                    <p>your grand father name <br> your father name <br>your name</p>
+                </div>
+                &#9749; Multilevel ante aradamaindi ga me grandparent info kooda me nunchi access cheyyochu <br>
+
+
+                <h4>&#11088; Hierarchical Inheritance</h4>
+                &#9749; meku ee doubt raleda, anni methods ni access antunnav kadha mari constructor method sangatenti. we can't inherit constructor method but we can invoke it from child classes using super keyword <br>
+                &#9749; observe carefully <br>
+                <div class="design code">
+                    <div class="flo"><p>JAVA</p></div>
+                    <br>
+                    <p><span class="class">class</span> <span class="file">Details</span> {</p><br>
+                    <p class="ten"><span class="str">String</span> full_name;</p><br>
+                    <p class="ten"><span class="type">int</span> age;</p><br>
+                    <p class="ten"><span class="method">Details </span>(<span class="str">String </span>name, <span class="type">int</span> age) {</p><br>
+                    <p class="ten2"><span class="public">this</span>.full_name = name;</p><br>
+                    <p class="ten2"><span class="public">this</span>.age = age;</p><br>
+                    <p class="ten">}</p><br>
+                    <p class="ten"><span class="return">void</span> <span class="method">info </span>() {</p><br>
+                    <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"name: "</span>+full_name+<span class="msg">"\nage: "</span>+age);</p> <br>
+                    <p class="ten">}</p><br>
+                    <p>}</p><br>
+
+                    <p><span class="class">class</span> <span class="file">Nuvvu</span> <span class="class">extends</span> <span class="file">Details</span>{</p><br>
+                    <p class="ten"><span class="method">Nuvvu </span> (<span class="str">String </span>name, <span class="type">int</span> age) {</p><br>
+                    <p class="ten2">super(name, age);</p><br>
+                    <p class="ten">}</p><br>
+                    <p>}</p><br>
+
+                    <p><span class="class">class</span> <span class="file">Nenu</span> <span class="class">extends</span> <span class="file">Details</span> {</p><br>
+                    <p class="ten"><span class="method">Nenu </span> (<span class="str">String </span>name, <span class="type">int</span> age) {</p><br>
+                    <p class="ten2">super(name, age);</p><br>
+                    <p class="ten">}</p><br>
+                    <p>}</p><br>
+
+                    <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="file">Nuvvu</span> filldetails = <span class="public">new</span> <span class="file">Nuvvu</span>(<span class="msg">"Jayakrishna", 21</span>);</p><br>
+                    <p class="ten2"><span class="file">Nenu</span> filldetails2 = <span class="public">new</span> <span class="file">Nenu</span>(<span class="msg">"your name", your age</span>);</p><br>
+                    <p class="ten2">filldetails.<span class="method">info</span>()</p><br>
+                    <p class="ten2">filldetails2.<span class="method">info</span>()</p><br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+                </div>
+                <div class="design output">
+                    <div class="flo"><p>output</p></div>
+                    <p>name: Jayakrishna <br>age: 21 <br>
+                    name: your name <br> age: your age</p>
+                </div>
+
+            &#9749; Multiple Inheritance was not support in java but we can do that using interfaces, danikosam coming chapters lo discuss cheddam <br>
+
+            </p>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/encapsulation.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/polymorphism.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

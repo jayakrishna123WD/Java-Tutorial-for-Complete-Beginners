@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Interfaces</h3>
+            <div class="tab">
+                <a href="../htmlfiles/abstractclasses.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/collections.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Interface ante complete ga abastract class lo only abstract methods ye untay. <br>
+                &#9749; we can define interface class by using interface keyword before class <br>
+                &#9749; Interfaces can't have constructor, and we cannot create objects to interface classes directly <br>
+                &#9749; interface lo unde methods ki abstract keyword mention cheyyakarledu because interface antene all methods are abstract so, no need to mention abstrat before methods. <br>
+                &#9749; one interface can extends another interface just like one class extends another class. In class we use extends keyword but in interface we use implements keyword <br>
+                &#9749; Inheritance lo Multiple Inheritance support ledu annam kadha, we can perform that using interfaces. one class can extends two different interfaces at a time. <br>
+                &#9749; All methods in interface have access level of public. <br>
+            </p>
+
+
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">interface</span> <span class="file">Insta</span> {</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">id</span>();</p><br>
+                <p>}</p><br>
+
+                <p><span class="class">interface</span> <span class="file">Whatsapp</span> {</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">number</span>();</p><br>
+                <p>}</p><br>
+
+                <p><span class="class">class</span> <span class="file">You </span><span class="class">implements </span><span class="file">Insta</span>, <span class="file">Whatsapp</span> {</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">id</span>() {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Your Id"</span>);</p> <br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="return">void</span> <span class="method">number</span>() {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Your number"</span>);</p> <br>
+                <p class="ten">}</p><br>
+                <p>}</p><br>
+            </div>
+            <div class="design code">
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="file">You</span> details = <span class="public">new</span> <span class="file">You</span>();</p><br>
+                    <p class="ten2">details.<span class="method">id</span>();</p><br>
+                    <p class="ten2">details.<span class="method">number</span>();</p><br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Your Id <br>Your number</p>
+            </div>
+
+            &#9749; Open IDE and practice once, meeku oka idea vastundi <br>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/abstractclasses.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/collections.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

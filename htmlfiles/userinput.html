@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/userinput.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">User Input</h3>
+            <div class="tab">
+                <a href="../htmlfiles/string.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/math.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; user nunchi input teeskovadam yela,,&#129300;<br>
+                &#9749; python aythe yedo simple ga input() ante saripotundi kani ikkada java amma, java tho antha easy kaadu &#129315; <br>
+                &#9749; ayna bayapadakandi concept ardam cheskondi, easy ga cheseyandi<br>
+                &#9749; nuv input icchaka daniki teliyali ga adhi respective data type related value ani anduke different data type ki different methods unnay input teeskovadaniki <br>
+                &#9749; we've a class called Scanner in util package. package ante yedo kaadu oka folder anukondi, collection of java classes ne package antaru. 
+                Scanner class ni use cheyyali ante first ah file ni import cheskovali. ante simply oka pdf file open cheyyalante first adhi download ayyi undali ga alane import cheskuntunnam. util 
+                ane folder nunchi scanner file ni tecchukuntunnam. <br>
+                &#9749; previous ga cheppukunnatlu class lo methods use cheyyalante first identity create cheyyali ante object create chesi taruvata ye data type input kavalo ah respective method ni use chesi input teeskovadame. <br> 
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">import </span>java.util.<span class="class">Scanner</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p>
+                <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            &#9749; System.in and System.out was connected to the console. It's the place we enter the values and see the outputs. <br>
+            &#9749; Let's take input for different data types using respective methods from Scanner class. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">byte </span>number1;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the byte datatype input: "</span>);</p> <br>
+                <p>number1 = input.<span class="method">nextByte</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number1);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the byte datatype input: <br> 5 <br>5</p>
+            </div>
+
+            &#9749; varible lekunda format print method use chesi print cheyyochu teeskunna input ni lets see. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the byte input: "</span>);</p> <br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">printf</span>(<span class="msg">"Entered number is %d "</span>, in.<span class="method">nextByte</span>());</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the byte input: <br> 5 <br>Entered number is 5</p>
+            </div>
+
+            &#9749; For short dataType input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">short </span>number2;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the short datatype input: "</span>);</p> <br>
+                <p>number2 = input.<span class="method">nextShort</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number2);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the short datatype input: <br> 130 <br>130</p>
+            </div>
+
+            &#9749; For int dataType input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">int </span>number3;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the int datatype input: "</span>);</p> <br>
+                <p>number3 = input.<span class="method">nextInt</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number3);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the int datatype input: <br> 55000 <br>55000</p>
+            </div>
+
+            &#9749; For long datatype input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">long </span>number4;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the long datatype input: "</span>);</p> <br>
+                <p>number4 = input.<span class="method">nextLong</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number4);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the long datatype input: <br> 555000 <br>555000</p>
+            </div>
+
+            &#9749; For float datatype input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">float </span>number5;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the float datatype input: "</span>);</p> <br>
+                <p>number5 = input.<span class="method">nextFloat</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number5);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the float datatype input: <br> 4.5 <br>4.5</p>
+            </div>
+
+            &#9749; For double datatype input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">double </span>number6;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the double datatype input: "</span>);</p> <br>
+                <p>number6 = input.<span class="method">nextDouble</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(number6);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the double datatype input: <br> 547.239 <br>547.239</p>
+            </div>
+            &#9749; For boolean datatype input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="type">boolean </span>choice;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter the boolean datatype input: "</span>);</p> <br>
+                <p>choice = input.<span class="method">nextBoolean</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(choice);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter the boolean datatype input: <br> 5true <br>true</p>
+            </div>
+
+            &#9749; For String datatype input <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="str">String </span>full_name;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter your full name: "</span>);</p> <br>
+                <p>full_name = input.<span class="method">next</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(full_name);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter your full name: <br> full name <br>full</p>
+            </div>
+            &#9749; next() method use cheste, only first word matrame print avtundi. <br>
+            &#9749; full name antha print avvalante nextLine() method use cheyyali. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">Scanner</span> input = <span class="public">new</span> <span class="class">Scanner</span>(<span class="str">System</span>.<span class="out">in</span>);</p> <br>
+                <p><span class="str">String </span>full_name;</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Enter your full name: "</span>);</p> <br>
+                <p>full_name = input.<span class="method">nextLine</span>();</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(full_name);</p> <br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>Enter your full name: <br> jimmy chan <br>jimmy chan</p>
+            </div>
+
+            &#9749; so meeru kooda IDE open chesi okasari try chesarante alavataipotundi. <br>
+            &#9749; meeru try chesta annaru ante confirm ga chestaru <br>
+            <img src="../images/ahaan.gif" alt="ahaan" class="same">
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/string.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/math.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

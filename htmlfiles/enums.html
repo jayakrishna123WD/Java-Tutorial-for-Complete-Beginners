@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enums</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Enums</h3>
+            <div class="tab">
+                <a href="../htmlfiles/methods.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/encapsulation.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Enums -- enumerations, array like structure lo constants ni store cheyyadam. Collections of unchangable values. <br>
+                &#9749; months in year, days in week unchangable kadha. if manaki constants tho requirement unte appudu enum ni use chestam. <br>
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">enum</span><span class="method"> FrontEnd</span> {</p> <br>
+                <p class="ten2">HTML,</p><br>
+                <P class="ten2">CSS,</P><br>
+                <p class="ten2">JAVASCRIPT</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="method"> FrontEnd</span> lang = <span class="method"> FrontEnd</span>.HTML</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(lang);</p> 
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>HTML</p>
+            </div>
+
+            &#9749; printing all constant using Enhanced for loop(for each loop) <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">enum</span><span class="method"> FrontEnd</span> {</p> <br>
+                <p class="ten2">HTML,</p><br>
+                <P class="ten2">CSS,</P><br>
+                <p class="ten2">JAVASCRIPT</p><br>
+                <p class="ten">}</p><br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="type">for </span>(<span class="method">FrontEnd</span> lang : <span class="method"> FrontEnd</span>.<span class="method">values</span>()) {</p><br>
+                <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(lang);</p> <br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>HTML <br> CSS <br> JAVASCRIPT</p>
+            </div>
+
+            &#9749; meeru work chese code lo constant requirement unte alanti situations lo enums ni use cheskondi anni constants oka deggara untay kadha accessibility easy avtundi <br>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/methods.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/encapsulation.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

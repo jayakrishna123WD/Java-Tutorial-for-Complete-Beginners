@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Collections</h3>
+            <div class="tab">
+                <a href="../htmlfiles/interfaces.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/errorexceptions.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Java arrays tho vacchina problem yentante array size confirm ga declare cheyyali and extra elements add cheyyadam avvadu, unna elements ni delete cheyyadam avvadu, direct ga print cheyyadam avvadu. we can perform those features by using collection framework <br>
+                &#9749; collections framework, which is in util package is collection of classes and interfaces which helps performing array operations <br>
+                &#9749; ArrayList, LinkedList, Queue, HashSet, HashMap, etc,. are included in collections framework <br>
+                &#9749; we can perform adding, removing getting of elements and size of element. checking an element present in array or not in an array with the help of collections framework<br>
+                &#9749; lets see all useful data structures implementation and perform some operations <br>
+            </p>
+
+            <h4>&#11088; ArrayList</h4>
+            &#9733; ArrayList use cheyyadam valla arrays size automatic ga adjust avtay. This is very similar to normal array and best for storing and accessing data. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">ArrayList</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">ArrayList</span>&#60;<span class="str">String</span>&#62; directions = <span class="public">new</span> <span class="class">ArrayList</span>&#60;<span class="str">String</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+
+            &#9733; let's add directions into directions array <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>directions.<span class="method">add</span>(<span class="msg">"North"</span>);</p><br>
+                <p>directions.<span class="method">add</span>(<span class="msg">"East"</span>);</p><br>
+                <p>directions.<span class="method">add</span>(<span class="msg">"South"</span>);</p><br>
+                <p>directions.<span class="method">add</span>(<span class="msg">"West"</span>);</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions);</p> 
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>[North, East, South, West]</p>
+            </div>
+
+            &#9733; accessing elements by index value using get method, don't forget that index value starts from 0  <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions.<span class="method">get</span>(<span class="msg">2</span>));</p><br>
+                <p>//output is South</p>
+            </div>
+
+            &#9733; manipulate the data in directions array by index value and value by using set method <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>directions.<span class="method">set</span>(<span class="msg">2</span>, <span class="msg">"North"</span>);</p><br>
+                //arrays becomes [North(index 0), East(index 1), North(index 2), West(index 3)]
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions.<span class="method">get</span>(<span class="msg">2</span>));</p><br>
+                <p>//output is North</p>
+            </div>
+
+            &#9733; remove element from directions array using remove method <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>directions.<span class="method">remove</span>(<span class="msg">2</span>);</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions);</p><br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>[North, East, West]</p>
+            </div>
+
+            &#9733; size method will returns the size of the directions array <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions.<span class="method">size</span>());</p><br>
+                <p>// output is 3</p>
+            </div>
+
+            &#9733; find an element present in directions array or not by using contains method which returns boolean output <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions.<span class="method">contains</span>(<span class="msg">"South"</span>));</p><br>
+                <p>// output is false</p> <br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(directions.<span class="method">contains</span>(<span class="msg">"North"</span>));</p><br>
+                <p>// output is true</p> <br>
+            </div>
+
+            &#9733; printing the directions array elements using for each loop <br>
+            <div class="design code">
+                <p><span class="type">for </span>(<span class="str">String</span> word : directions) {</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">print</span>(word+<span class="msg">" "</span>);</p> <br>
+                <p>}</p><br>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>North East West </p>
+            </div>
+            <hr class="divider">
+
+            <h4>&#11088; LinkedList</h4>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">LinkedList</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">LinkedList</span>&#60;<span class="str">String</span>&#62; directions = <span class="public">new</span> <span class="class">LinkedList</span>&#60;<span class="str">String</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+            &#9733; LinkedList is best for manipulating data in array as numerous inserts and deletes <br>
+            &#9733; if your requirement is upto for simple process of accessing and storing elements in array then choose ArrayList <br>
+            &#9733; if your requirement is for manipulating data for n times then choose LinkedList <br>
+            &#9733; Methods in ArrayList and LinkedList are common <br>
+            
+            <hr class="divider">
+            <h4>&#11088; HashSet</h4>
+            &#9733; idhi kooda same as ArrayList and LinkedList, but vatiki order of data untundi deeniki oka sequence undadu random ga array elements ni print chestundi<br>
+            &#9733; HashSet is unordered collection, it doesn't have indexes. random ga values kavalante your choice will be HashSet and too it doesn't contain duplicate values <br>
+            &#9733; HashSet supports the methods add, remove, size, contains. <br> 
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">HashSet</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">HashSet</span>&#60;<span class="str">String</span>&#62; names = <span class="public">new</span> <span class="class">HashSet</span>&#60;<span class="str">String</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"rakesh"</span>);</p><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"suresh"</span>);</p><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"rajesh"</span>);</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(names);</p> 
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>[suresh, rakesh, rajesh]</p>
+            </div>
+
+            <hr class="divider">
+            <h4>&#11088; HashMap</h4>
+            &#9733; HashMap kooda HashSet laane unordered collection of elements. 
+            HashMap lo data key value pair la store avtundi, HashMap array lo elements ni add or access cheyyalanna key use chesi access cheyyochu. key must be unique value in HashMap. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">HashMap</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">HashMap</span>&#60;<span class="str">String</span>, <span class="type">Integer</span>&#62; amount = <span class="public">new</span> <span class="class">HashMap</span>&#60;<span class="str">String</span>, <span class="type">Integer</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+
+            &#9733; add elements to HashMap array using put method <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"hundred rupees"</span>, <span class="msg">100</span>);</p><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"fifty rupees"</span>, <span class="msg">50</span>);</p><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"ten rupees"</span>, <span class="msg">10</span>);</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amount);</p> 
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>{fifty rupees=50, ten rupees=10, hundred rupees=100}</p>
+            </div>
+
+            &#9733; accessing elements by key using get method <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amount.<span class="method">get</span>(<span class="msg">"ten rupees"</span>));</p><br>
+                <p>//output is 10</p>
+            </div>
+
+            &#9733; replace values using replace method <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>amount.<span class="method">replace</span>(<span class="msg">"ten rupees"</span>, <span class="msg">150</span>));</p><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amount.<span class="method">get</span>(<span class="msg">"ten rupees"</span>));</p><br>
+                <p>//output is 150</p>
+            </div>
+
+            &#9733; As like ArrayList HashMap also supports remove, size methods <br>
+            &#9733; find an element present in amount array or not by using contains method which returns boolean output <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amount.<span class="method">containsKey</span>(<span class="msg">"hundred rupees"</span>));</p><br>
+                <p>// output is true</p> <br>
+                <p><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amount.<span class="method">containsKey</span>(<span class="msg">"North"</span>));</p><br>
+                <p>// output is false</p> <br>
+            </div>
+
+            &#9733; printing keys and values using for loop <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">Map</span>;</p><br>
+                <p><span class="public">import </span>java.util.<span class="class">HashMap</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">HashMap</span>&#60;<span class="str">String</span>, <span class="type">Integer</span>&#62; amount = <span class="public">new</span> <span class="class">HashMap</span>&#60;<span class="str">String</span>, <span class="type">Integer</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"hundred rupees"</span>, <span class="msg">100</span>);</p><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"fifty rupees"</span>, <span class="msg">50</span>);</p><br>
+                <p>amount.<span class="method">put</span>(<span class="msg">"ten rupees"</span>, <span class="msg">10</span>);</p><br>
+                <p><span class="type">for </span>(<span class="class">Map</span>.<span class="class">Entry</span>&#60;<span class="str">String</span>, <span class="type">Integer</span>&#62; amt : amount.<span class="method">entrySet</span>() {</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amt.<span class="method">getKey</span>()+ <span class="msg">" : "</span> + amt.<span class="method">getValue</span>());</p><br>
+                <p>}</p>
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>fifty rupees : 50 <br> ten rupees : 10 <br> hundred rupees : 100</p>
+            </div>
+
+            &#9733; printing keys and values seperatly using for each loop <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="type">for </span>(<span class="str">String</span> amt : amount.<span class="method">keySet</span>() {</p><br>
+                <p class="ten"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(amt);</p><br>
+                <p>}</p>
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>ten rupees <br>fifty rupees  <br> hundred rupees</p>
+            </div>
+
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="type">for </span>(<span class="type">int</span> amt : amount.<span class="method">values</span>() {</p><br>
+                <p class="ten"><span class="type">System</span>.<span class="out">out</span>.<span class="method">println</span>(amt);</p><br>
+                <p>}</p>
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>100 <br>10  <br> 50</p>
+            </div>
+
+
+            <hr class="divider">
+
+
+            <h4>&#11088; iterator</h4>
+            &#9733; An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet. It is called an "iterator" because "iterating" is the technical term for looping. To use an Iterator, you must import it from the java. util package. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p><span class="public">import </span>java.util.<span class="class">HashSet</span>;</p><br>
+                <p><span class="public">import </span>java.util.<span class="class">Iterator</span>;</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                    <br>
+                    <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                    <p class="ten2"><span class="class">HashSet</span>&#60;<span class="str">String</span>&#62; names = <span class="public">new</span> <span class="class">HashSet</span>&#60;<span class="str">String</span>&#62;();</p>
+                    <br>
+                    <p class="ten">}</p>
+                    <br>
+                    <p>}</p>
+            </div>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"rakesh"</span>);</p><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"suresh"</span>);</p><br>
+                <p>names.<span class="method">add</span>(<span class="msg">"rajesh"</span>);</p><br>
+                <p><span class="class">Iterator</span>&#60;<span class="str">String</span>&#62; check = names.<span class="method">iterator</span>();</p><br>
+                <p><span class="type">while </span>(check.<span class="method">hasNext</span>()) {</p><br>
+                <p class="ten"><span class="type">System</span>.<span class="out">out</span>.<span class="method">println</span>(check.<span class="method">next</span>());</p><br>
+                <p>}</p>
+            </div> 
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>rajesh <br> rakesh <br> suresh</p>
+            </div>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/interfaces.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/errorexceptions.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Variables</h3>
+            <div class="tab">
+                <a href="../htmlfiles/data-types.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/operators.html" class="link">&#9193; Next topic</a>
+            </div>
+            <img src="../images/varible.jpg" alt="icecream" class="same">
+            <p>&#9749; image lo icecream oka box lo undi kadha same way variables kooda different data type values ni store cheskuntundi 
+                yela ayithe different types of ice creams ni different boxes store cheskuntayo. <br>
+                &#9749; Java is a statically-typed language. Ante manam data type mention cheyyali every variable ki based on the value type you're giving <br>
+                &#9749; simple example ippudu image lo box meeda vanilla ani lekapote meku yela telustundi lopala ye flavour undho. alane data type mention cheyyali according to the value we're storing
+            </p>
+            <p>
+                &#9749; Keywords in Java <br>
+                <img src="../images/keywords.jpg" alt="keywords" class="same">
+                &#9749; Variable naming rules <br> 
+                variable name number tho start avvakudadhu, Reserved keywords ni varibale name ga use cheyyakudadhu, spaces undakudadu <br>
+                &#9749; valid variables
+                <ul>
+                    <li>name</li>
+                    <li>$name</li>
+                    <li>_name</li>
+                    <li>name2</li>
+                </ul>
+                &#9749; Invalid variables
+                <ul>
+                    <li>1name</li>
+                    <li>name two</li>
+                    <li>&name</li>
+                    <li>%name</li>
+                    <li>for</li>
+                    <li>this</li>
+                </ul>
+            </p>
+            <h4 class="headings">Declaring & initializing variable</h4> 
+        </div>
+
+
+        <div class="code">
+            <div class="flo"><p>JAVA</p></div>
+            <br>
+            <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+            <br>
+            <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+            <br>
+            <p class="ten2"><span class="type">byte</span> <span class="var">number0</span>; //Declaring a variable</p><br>
+            <p class="ten2"><span class="var">number0</span> =<span class="value"> 25</span>; //initializing a variable</p><br>
+            <p class="ten2"><span class="type">short</span> <span class="var">number1</span>;</p><br>
+            <p class="ten2"><span class="var">number1</span> =<span class="value"> 2500</span>;</p><br>
+            <p class="ten2"><span class="type">int</span> <span class="var">number2</span>;</p><br>
+            <p class="ten2"><span class="var">number2</span> =<span class="value"> 250000</span>;</p><br>
+            <p class="ten2"><span class="type">long</span> <span class="var">number3</span>;</p><br>
+            <p class="ten2"><span class="var">number3</span> =<span class="value"> 2500000000</span>;</p><br>
+            <p class="ten2"><span class="type">float</span> <span class="var">number4</span>;</p><br>
+            <p class="ten2"><span class="var">number4</span> =<span class="value"> 56.8f</span>;</p><br>
+            <p class="ten2"><span class="type">double</span> <span class="var">number5</span>;</p><br>
+            <p class="ten2"><span class="var">number5</span> =<span class="value"> 899.34d</span>;</p><br>
+            <p class="ten2"><span class="type">boolean</span> <span class="var">choice</span>;</p><br>
+            <p class="ten2"><span class="var">choice</span> =<span class="value"> true</span>;</p><br>
+            <p class="ten2"><span class="type">char</span> <span class="var">letter</span>;</p><br>
+            <p class="ten2"><span class="var">letter</span> =<span class="value"> 'B'</span>;</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number0</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number1</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number2</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number3</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number4</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">number5</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">choice</span>);</p><br>
+            <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">letter</span>);</p><br>
+            <br>
+            <p class="ten">}</p>
+            <br>
+            <p>}</p>
+        </div>
+        <div class="output">
+            <div class="flo"><p>output</p></div>
+            <p>25</p><br>
+            <p>2500</p><br>
+            <p>250000</p><br>
+            <p>2500000000</p><br>
+            <p>56.8</p><br>
+            <p>899.34</p><br>
+            <p>true</p><br>
+            <p>B</p>
+        </div>
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/data-types.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/operators.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

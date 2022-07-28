@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/conditional_switch.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional & Switch Statements</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Conditional & Switch Statements</h3>
+            <div class="tab">
+                <a href="../htmlfiles/operators.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/for_loop_statements.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Oka particular condition satisfy ayinappudu required operation ni perform chesedhe ee Conditional & Switch Statements. <br>
+                <div class="syntax">
+                    <div class="syn1">
+                        &#9749; <u><b>if--else Syntax:</b></u> <br>
+                    <p class="ten">if (condition) {<br> <span class="ten2">operation1;</span><br>}<br>
+                        else { <br><span class="ten2">operation2;</span><br>}</p> 
+                    </div>
+                    <div class="syn2">
+                        &#9749; <u><b>if--else-if Syntax:</b></u> <br>
+                    <p class="ten">if (condition1) {<br> <span class="ten2">operation1;</span><br>}<br>
+                        else if (condition2) {<br><span class="ten2">operation2;</span><br>}<br> else { <br><span class="ten2">operation3;</span><br>}</p> 
+                    </div>
+                    <div class="syn3">
+                        &#9749; <u><b>nested if--else-if Syntax:</b></u> <br>
+                        <p class="ten">if (condition1) {<br> 
+                        <span class="ten2">if (condition2) {</span><br>
+                        <span class="ten3">operation1;</span><br><span class="ten2">}</span><br>
+                        <span class="ten2">else {</span><br><span class="ten3">operation2;</span><br>
+                        <span class="ten2">}</span><br>
+                        else if (condition3) {<br><span class="ten2">operation3;</span><br>}<br> else { <br><span class="ten2">operation4;</span><br>}</p>
+                    </div>
+                    <div class="syn4">
+                        &#9749; <u><b>Switch Syntax:</b></u> <br>
+                    <p class="ten">switch (expression) {<br> <span class="ten2">case 1</span>: <br> <span class="ten3">//code;</span><br><span class="ten3">break;</span><br><span class="ten2">case 2</span>: <br><span class="ten3">//code;</span><br><span class="ten3">break;</span><br>
+                        <span class="ten2">default</span>: <br> <span class="ten3">//code;</span><br><span class="ten3">break;</span><br>}</p> 
+                    </div>
+                </div>
+                &#9749; condition true aythe if block work avtundi, condition false aythe else block work avtundi. condition yeppudu kooda if and else-if ke untundi, else ki condition undadu -- condition false aythe direct ga else block ye run avtundi. <br>
+            </p>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="type">byte</span> <span class="var">choclates</span> = <span class="msg">5</span>; </p><br>
+                <p class="ten2"><span class="type">if</span> (choclates &#62; 4) {</p><br>
+                <p class="ten3"><span class="type">if</span> (choclates == 4) {</p><br>
+                <p class="ten4"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take 2 choclates"</span>);</p><br>
+                <p class="ten3">}</p><br>
+                <p class="ten3"><span class="type">else if</span> (choclates == 3 || choclates == 2) {</p><br>
+                <p class="ten4"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"only 1 choclate"</span>);</p><br>
+                <p class="ten3">}</p><br>
+                <p class="ten3"><span class="type">else if</span> (choclates == 1) {</p><br>
+                <p class="ten4"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Do not take choclate"</span>);</p><br>
+                <p class="ten3">}</p><br>
+                <p class="ten3"><span class="type">else </span>{</p><br>
+                <p class="ten4"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take 3 choclates"</span>);</p><br>    
+                <p class="ten3">}</p><br>
+                <p class="ten2">}</p><br>
+                <p class="ten2"><span class="type">else </span>{</p><br>
+                <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take all choclates"</span>);</p><br>    
+                <p class="ten2">}</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>take 3 choclates</p>
+            </div>
+            &#9749; meeru kooda oka example teeskoni code la convert cheyyandi. try to understand the above code. <br>
+            &#9749; else if anni sarlu rase badhulu simple ga Switch Statements tho manam cheyyochu. <br>
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p>
+                <br>
+                <p class="ten2"><span class="type">byte</span> <span class="var">choclates</span> = <span class="msg">3</span>; </p><br>
+                <p class="ten2"><span class="type">if</span> (choclates &#62; 4) {</p><br>
+                <p class="ten3"><span class="type">switch </span>(choclates) {</p><br>
+                <p class="ten4"><span class="type">case </span><span class="msg">4</span>:</p><br>
+                <p class="ten5"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take 2 choclates"</span>);</p><br>
+                <p class="ten5"><span class="type">break</span>;</p><br>
+                <p class="ten4"><span class="type">case </span><span class="msg">3</span>:</p><br>
+                <p class="ten5"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"only 1 choclate"</span>);</p><br>
+                <p class="ten5"><span class="type">break</span>;</p><br>
+                <p class="ten4"><span class="type">case </span><span class="msg">2</span>:</p><br>
+                <p class="ten5"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"only 1 choclate"</span>);</p><br>
+                <p class="ten5"><span class="type">break</span>;</p><br>
+                <p class="ten4"><span class="type">case </span><span class="msg">1</span>:</p><br>
+                <p class="ten5"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"Do not take choclate"</span>);</p><br>
+                <p class="ten5"><span class="type">break</span>;</p><br>
+                <p class="ten4"><span class="type">default </span>:</p><br>
+                <p class="ten5"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take 3 choclates"</span>);</p><br>
+                <p class="ten5"><span class="type">break</span>;</p><br>
+                <p class="ten3">}</p><br>
+                <p class="ten2">}</p><br>
+                <p class="ten2"><span class="type">else </span>{</p><br>
+                <p class="ten3"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"take all choclates"</span>);</p><br>    
+                <p class="ten2">}</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>take all choclates</p>
+            </div>
+            <p>&#9749; Switch Statements else if ki similar gane untundi. different possible values ki condition match ayye situation lo ee Statements ni use chestam. <br>
+             &#9749; oka sari IDE open chesi motham chesarante meeku oka idea vacchestundi <br>
+            &#9749; break keyword kosam next topic lo discuss cheddam....</p>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/operators.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/for_loop_statements.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>

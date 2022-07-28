@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/same.css">
+    <link rel="icon" href="../images/logo.png">
+
+    <!--fonts  font-family: 'Finlandica', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    
+    <!--coding font-family: 'IBM Plex Mono', monospace;-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Classes</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="design">
+            <h3 class="headings">Abstract Classes</h3>
+            <div class="tab">
+                <a href="../htmlfiles/polymorphism.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/interfaces.html" class="link">&#9193; Next topic</a>
+            </div>
+            <p>
+                &#9749; Abstract classes are created by using abstract keyword before class <br>
+                &#9749; any class having abstract method then the class is abstract class <br>
+                &#9749; we can't create objects directly for an abstract class, but we can create by inheriting abstract class using normal class then creating object for the normal class and we can access methods in abstract class <br>
+                &#9749; simple ga cheppalante abstract class lo just method declarations ye untay inherit cheskoni manaki kavalsindi implement cheskovacchu <br>
+                &#9749; like mobile phone lo ram istadu kadha, ah method lo manam apps install chestam and uninstall chestam. manaki use ayyela use cheskovadame lets see an example <br>
+            </p>
+
+            <div class="design code">
+                <div class="flo"><p>JAVA</p></div>
+                <br>
+                <p><span class="class">abstract </span><span class="class">class</span> <span class="file">Ram</span> {</p><br>
+                <p class="ten"><span class="class">abstract </span><span class="return">void </span><span class="method">apps</span>();</p><br>
+                <p>}</p><br>
+                <p><span class="class">class</span> <span class="file">SubwaySurf</span> <span class="class">extends</span> <span class="file">Ram</span> {</p><br>
+                <p class="ten"><span class="return">void </span><span class="method">apps</span>() {</p><br>
+                <p class="ten2"><span class="str">System</span>.<span class="out">out</span>.<span class="method">println</span>(<span class="msg">"I am installing"</span>);</p> <br>
+                <p class="ten">}</p><br>
+                <p>}</p><br>
+                <p><span class="public">public</span> <span class="class">class</span> <span class="file">MyClass</span> {</p>
+                <br>
+                <p class="ten"><span class="public">public</span> <span class="static">static</span> <span class="return">void</span> <span class="method">main</span>(<span class="str">String</span>[] <span class="args">args</span>) {</p><br>
+                <p class="ten2"><span class="file">SubwaySurf</span> mobile = <span class="public">new</span> <span class="file">SubwaySurf</span>();</p><br>
+                <p class="ten2">mobile.<span class="method">apps</span>();</p><br>
+                <p class="ten">}</p>
+                <br>
+                <p>}</p>
+            </div>
+            <div class="design output">
+                <div class="flo"><p>output</p></div>
+                <p>I am installing</p>
+            </div>
+
+            &#9749; Important points to remember while working with abstract class <br>
+            <p class="ten">
+                &#9733; we can't create objects directly for an abstract classes <br>
+                &#9733; any class having abstract method is abstract class <br>
+                &#9733; by using another class we can inherit abstract class, creating object and using abstract class methods <br>
+            </p>
+        </div>
+
+
+        
+        <hr class="divider">
+        <div class="design">
+            <div class="tab">
+                <a href="../htmlfiles/polymorphism.html" class="link">&#9194; Previous topic</a> <a href="../index.html#bottom" class="link">&#127968; Home</a> <a href="../htmlfiles/interfaces.html" class="link">&#9193; Next topic</a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p>Copyright &#9400; 2022 All Rights Reserved | Polamarasetti Jayakrishna</p>
+        </div>
+    </section>
+</body>
+</html>
